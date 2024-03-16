@@ -9,10 +9,19 @@
    
 </head>
 <body>
-    <div class="bg-black">
-        <h1 id ="title" class="heading">DOM by me</h1>
-        <p>Lorem ipsum</p>
+    <div class="parent">
+    <div class="day">MON</div>
+    <div clas="day"> Tue</div>
+    <div class="day">Wed</div>
+    <div class="day">Thur</div>
     </div>
     
 </body>
+<script>
+    const par=document.querySelector('.parent');
+    for(let i=0;i<par.children.length;i++){
+        console.log(par.children[i].innerHTML);
+    }
+    par.children[1].style.color="orange";
+    </script>
 </html>
